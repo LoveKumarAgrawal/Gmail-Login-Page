@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin-top: 35px;
+    border: 1px solid rgb(211, 208, 208);
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+}
+.container .logo{
+    /* border: 2px solid red; */
+    text-align: center;
+    padding-top: 50px;
+}
+.container #google_logo{
+    width: 75px;
+}
+.container .name{
+    /* border: 2px solid green; */
+    text-align: center;
+    font-size: 23px;
+    padding-top: 12px;
+    font-weight: 400;
+}
+.container .email{
+    /* border: 2px solid blue; */
+    padding-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .email .email_inside{
+    display: flex;
+    align-items: center;
+    color: rgb(1, 1, 1);
+    border: 1px solid rgb(211, 208, 208);
+    border-radius: 16px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.container .email #down_arrow{
+    font-size: 20px;
+}
+.container .password{
+    position: relative;
+    /* margin-top: 45px; */
+    /* border: 1px solid red; */
+}
+.container .password input{
+    width: 100%;
+    height: 55px;
+    border: 1px solid rgb(211, 208, 208);
+    outline: none;
+    border-radius: 5px;
+    padding-left: 19px;
+    font-size: 17px;
+}
+.container .password label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    left: 5%;
+    font-weight: 500;
+    font-size: 17px;
+    color:rgb(104, 104, 104);
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.container form{
+    width: 100%;
+    /* height: 68%; */
+    padding: 50px 40px 45px 40px;
+}
+.container .password input:focus ~ label, .container .password input:not(:placeholder-shown) ~ label{
+    top: 0%;
+    font-size: 12px;
+    background-color: white;
+    transform: translateY(-45%);
+    padding: 0 3px;
+    left: 3%;
+    color: blue;
+}
+.container .password input:focus,  .container .password input:not(:placeholder-shown){
+    border-color: blue;
+}
+.container .showpassword{
+    margin-top: 12px;
+    display:flex;
+    align-items: center;
+    padding-left: 5px;
+}
+.container .showpassword span{
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.container .showpassword input[type=checkbox]{
+    width: 18px;
+    height: 18px;
+}
+.container .forgot_password{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .forgot_password .forgot a{
+    font-size: 14px;
+    color: rgb(26,115,232);
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.container .forgot_password .next_btn button{
+    background-color: rgb(33, 122, 237);
+    width: 80px;
+    font-size: 15px;
+    height: 35px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+.outside{
+    padding-top: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    font-size: 12px;
+}
+.outside .help ul{
+    display: flex;
+    list-style: none;
+}
+.outside .help ul li{
+    margin-left: 35px;
+}
+.outside .languageSelect #outside_downarrow{
+    font-size: 20px;
+    margin-left: 35px;
+}
+.outside .languageSelect{
+    display: flex;
+    align-items: center;
+}
